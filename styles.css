@@ -69,12 +69,10 @@ body {
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
+  margin-bottom: 10px;
   width: 100%;
   height: auto;
-  /* background: radial-gradient(27.15% 27.15% at 50% 50%, rgba(202, 202, 202, 0.37) 0%, #000000 100%); */
-  /* border-style: solid; */
-  /* border-width: 1px; */
-  /* border-color: indianred; */
+  background: radial-gradient(27.15% 27.15% at 50% 50%, rgba(202, 202, 202, 0.5) 0%, #000000 100%);
 }
 
 .featuredContentDiv {
@@ -82,22 +80,27 @@ body {
   width: 250px;
   height: 400px;
   background-color: white;
-  border-radius: 15px;
+  border-radius: 10px;
+
+  -webkit-box-reflect: below 0px linear-gradient(transparent 80%, rgba(255, 255, 255, 0.384) 100%);
 }
 
 #middle {
+  margin-top: 0;
   width: 300px;
-  height: 460px;
+  height: 480px;
 }
 
 .featuredContentDiv div {
-  margin-top: 20px;
+  margin-top: 25px;
   margin-left: auto;
   margin-right: auto;
-  width: 200px;
+  width: 80%;
   height: 110px;
-  border-radius: 15px;
+  border-radius: 10px;
   background-color: #251D58;
+  background: url(./images/placeholdersky.png);
+  background-size: auto 100%;
 }
 .featuredContentDiv div:active {
   background: url(./images/freezerwebicon.png);
@@ -112,7 +115,36 @@ body {
   height: 290px;
   height: var(--footerHeight);
   background: linear-gradient(0deg, #251D58 11.25%, #1C246D 25.32%, rgba(67, 85, 250, 0.58) 59.95%, rgba(94, 117, 236, 0.331429) 72.94%, rgba(62, 73, 171, 0) 90.26%);
-  
+}
+
+.footerNavBarDiv {
+  position: absolute;
+  z-index: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  width: 100%;
+  height: var(--footerHeight);
+  /* box-shadow: 0 0 0 1px greenyellow; */
+}
+
+.footerNavBarDiv div {
+  display: flex;
+  align-items: center;
+  margin: 50px 20px 0 20px;
+  width: 70px;
+  height: 70px;
+}
+
+.footerNavBarDiv div:last-child {
+  margin-right: 60px;
+}
+
+.footerNavBarDiv div img {
+  width: 100%;
+}
+.footerNavBarDiv div img:hover {
+  opacity: 0.5;
 }
 
 .footerGraphic {
