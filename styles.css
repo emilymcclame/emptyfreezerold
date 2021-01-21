@@ -57,6 +57,10 @@ body {
   font-size: 40px;
   color: white;
 }
+.navBar a {
+  text-decoration: none;
+  color: white;
+}
 
 /* Content Box Styling ////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .contentParentDiv {
@@ -94,6 +98,10 @@ body {
   height: 110px;
   border-radius: 15px;
   background-color: #251D58;
+}
+.featuredContentDiv div:active {
+  background: url(./images/freezerwebicon.png);
+  background-size: auto 100%;
 }
 
 
