@@ -1,7 +1,6 @@
-
 :root {
-  --titleHeight: 300px;
-  --titleGraphicHeight: 230px;
+  --titleHeight: 250px;
+  --titleGraphicHeight: 180px;
 
   --footerHeight: 290px;
   --footerGraphicHeight: 122px;
@@ -9,7 +8,10 @@
 
 html {
   background-color: black;
-  overflow-x: hidden;
+}
+
+body {
+  margin: 0;
 }
 
 /* Title Box styling //////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
@@ -58,13 +60,42 @@ html {
 
 /* Content Box Styling ////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .contentParentDiv {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   width: 100%;
-  height: 100vh;
+  height: auto;
   /* background: radial-gradient(27.15% 27.15% at 50% 50%, rgba(202, 202, 202, 0.37) 0%, #000000 100%); */
   /* border-style: solid; */
   /* border-width: 1px; */
   /* border-color: indianred; */
 }
+
+.featuredContentDiv {
+  margin: 30px;
+  width: 250px;
+  height: 400px;
+  background-color: white;
+  border-radius: 15px;
+}
+
+#middle {
+  width: 300px;
+  height: 460px;
+}
+
+.featuredContentDiv div {
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 200px;
+  height: 110px;
+  border-radius: 15px;
+  background-color: #251D58;
+}
+
 
 /* Footer Box Styling /////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
 .footerDiv {
