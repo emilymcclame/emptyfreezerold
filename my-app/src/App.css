@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
+
+:root {
+  --titleHeight: 300px;
+  --titleGraphicHeight: 230px;
+
+  --footerHeight: 290px;
+  --footerGraphicHeight: 122px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+html {
+  background-color: black;
+  overflow-x: hidden;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/* Title Box styling //////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.titleDiv {
+  width: 100%;
+  height: var(--titleHeight);
+  background: linear-gradient(180deg, #251D58 11.25%, #1C246D 25.32%, rgba(67, 85, 250, 0.58) 59.95%, rgba(94, 117, 236, 0.331429) 72.94%, rgba(62, 73, 171, 0) 90.26%);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navBarDiv {
+  position: absolute;
+  z-index: 1;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  height: var(--titleHeight);
+}
+
+.titleGraphic {
+  width: 100%;
+  height: var(--titleGraphicHeight);
+  background: url(./images/titleGradient.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* Nav Bar Styling */
+.navBar {
+  width: auto;
+  height: 60px;
+  margin-bottom: 80px;
+  margin-right: 10px;
+  padding: 0;
+  text-align: end;
+  border-style: none none solid none;
+  border-color: white;
+}
+.navBar li {
+  display: block;
+  float: left;
+  margin: 0 5px 0 5px;
+  font-size: 40px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+/* Content Box Styling ////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.contentParentDiv {
+  width: 100%;
+  height: 100vh;
+  /* background: radial-gradient(27.15% 27.15% at 50% 50%, rgba(202, 202, 202, 0.37) 0%, #000000 100%); */
+  /* border-style: solid; */
+  /* border-width: 1px; */
+  /* border-color: indianred; */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Footer Box Styling /////////////////////////////////////////////////////////////////////////////////////////////////////////////////*/
+.footerDiv {
+  display: flex;
+  width: 100%;
+  height: 290px;
+  height: var(--footerHeight);
+  background: linear-gradient(0deg, #251D58 11.25%, #1C246D 25.32%, rgba(67, 85, 250, 0.58) 59.95%, rgba(94, 117, 236, 0.331429) 72.94%, rgba(62, 73, 171, 0) 90.26%);
+  
+}
+
+.footerGraphic {
+  align-self: flex-end;
+  transform: scaleY(-1);
+  width: 100%;
+  height: var(--footerGraphicHeight);
+  background: url(./images/titleGradient.svg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
 }
